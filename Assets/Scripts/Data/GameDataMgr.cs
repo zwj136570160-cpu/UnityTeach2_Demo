@@ -14,6 +14,9 @@ public class GameDataMgr
     //角色数据
     public RoleData roleData;
 
+    //当前选择的角色 编号
+    public int nowSelHeroIndex = 0;
+
     private GameDataMgr() 
     {
         //获取本地硬盘中存储的音乐数据
@@ -98,6 +101,17 @@ public class GameDataMgr
 
         //保存数据
         XmlDataMgr.Instance.SaveData(rankData, "RankData");
+    }
+    #endregion
+
+    #region 玩家数据相关
+    /// <summary>
+    /// 提供给外部 获取当前选择的英雄数据
+    /// </summary>
+    /// <returns></returns>
+    public RoleInfo GetNowSelHeroInfo()
+    {
+        return roleData.roleList[nowSelHeroIndex];
     }
     #endregion
 }

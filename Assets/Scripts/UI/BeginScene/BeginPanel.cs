@@ -16,6 +16,7 @@ public class BeginPanel : BasePanel<BeginPanel>
         btnBegin.onClick.Add(new EventDelegate(() =>
         {
             //显示选角面板
+            ChoosePanel.Instance.ShowMe();
             //隐藏自己
             HideMe();
         }));
