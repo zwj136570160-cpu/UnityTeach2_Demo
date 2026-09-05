@@ -22,10 +22,12 @@ public class BeginPanel : BasePanel<BeginPanel>
         btnRank.onClick.Add(new EventDelegate(() =>
         {
             //显示排行榜面板
+            RankPanel.Instance.ShowMe();
         }));
         btnSetting.onClick.Add(new EventDelegate(() =>
         {
             //显示设置面板
+            SettingPanel.Instance.ShowMe();
         }));
         btnQuit.onClick.Add(new EventDelegate(() =>
         {
