@@ -11,12 +11,17 @@ public class GameDataMgr
     //排行榜数据
     public RankData rankData;
 
+    //角色数据
+    public RoleData roleData;
+
     private GameDataMgr() 
     {
         //获取本地硬盘中存储的音乐数据
         musicData = XmlDataMgr.Instance.LoadData(typeof(MusicData), "MusicData") as MusicData;
         //一开始就读取本地的排行榜数据
         rankData = XmlDataMgr.Instance.LoadData(typeof(RankData), "RankData") as RankData;
+        //一开始就读取角色数据
+        roleData = XmlDataMgr.Instance.LoadData(typeof(RoleData), "RoleData") as RoleData;
     }
 
     #region 音乐、音效相关

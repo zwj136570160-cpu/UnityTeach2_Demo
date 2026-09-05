@@ -28,7 +28,7 @@ public class RankItem : MonoBehaviour
         if (time % 3600 / 60 > 0 || str != "")
             str += time % 3600 / 60 + "m";
         //秒
-        str += time % 60 + "秒";
+        str += time % 60 + "s";
         labTime.text = str;
     }
 }

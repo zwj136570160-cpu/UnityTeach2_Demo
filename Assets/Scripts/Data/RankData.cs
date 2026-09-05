@@ -16,9 +16,9 @@ public class RankData
 /// </summary>
 public class RankInfo
 {
-    [XmlAnyAttribute]
+    [XmlAttribute]
     public string name;
 
-    [XmlAnyAttribute]
+    [XmlAttribute]
     public int time;
 }
