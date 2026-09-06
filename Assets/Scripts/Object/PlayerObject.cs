@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class PlayerObject : MonoBehaviour
 {
+    private static PlayerObject instance;
+    public static PlayerObject Instance => instance;
+
     //血量
     public int nowHp;
     public int maxHp;
@@ -22,7 +25,12 @@ public class PlayerObject : MonoBehaviour
 
     //上一次玩家的位置 就是在位移前 玩家的位置
     private Vector3 frontPos;
-    
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     public void Dead()
     {
         isDead = true;
