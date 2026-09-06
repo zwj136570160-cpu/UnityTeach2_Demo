@@ -118,9 +118,35 @@ public class ChoosePanel : BasePanel<ChoosePanel>
         }
     }
 
+    private float time;
+    //是否鼠标选中 模型
+    private bool isSel;
+
     // Update is called once per frame
     void Update()
     {
-        
+        //让飞机上下浮动
+        time += Time.deltaTime;
+        heroPos.Translate(Vector3.up * Mathf.Sin(time) * 0.0001f, Space.World);
+
+        //射线检测 让飞机 可以左右转动
+        if (Input.GetMouseButtonDown(0))
+        {
+            //如果点击到了 UI层碰撞器 认为需要开始 拖动飞机了
+            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition),
+                                1000,
+                                1 << LayerMask.NameToLayer("UI")))
+            {
+                isSel = true;
+            }
+        }
+        //抬起 取消旋转
+        if (Input.GetMouseButtonUp(0))
+            isSel = false;
+        //旋转对象
+        if (Input.GetMouseButton(0) && isSel)
+        {
+            heroPos.rotation *= Quaternion.AngleAxis(Input.GetAxis("Mouse X") * 20, Vector3.up);
+        }
     }
 }

@@ -824,7 +824,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1456, y: 828, z: 0}
+  m_Size: {x: 1457, y: 828, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &128716178
 MonoBehaviour:
@@ -857,7 +857,7 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 1456
+  mWidth: 1457
   mHeight: 828
   mDepth: 0
   boundless: 0
@@ -865,7 +865,7 @@ MonoBehaviour:
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1.7584541
+  aspectRatio: 1.7596618
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -1709,14 +1709,14 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3004
+  startingRenderQueue: 3008
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mAlphaProp: 
   mClipping: 3
-  mClipRange: {x: -0.92059326, y: 0, z: 760, w: 298}
+  mClipRange: {x: -0.5197754, y: 0, z: 760, w: 298}
   mClipSoftness: {x: 4, y: 4}
-  mDepth: 3
+  mDepth: 5
   mSortingOrder: 0
   mSortingLayerName: 
   mClipOffset: {x: 0, y: 112}
@@ -5268,7 +5268,7 @@ GameObject:
   - component: {fileID: 949571636}
   m_Layer: 5
   m_Name: Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5396,7 +5396,7 @@ GameObject:
   - component: {fileID: 963194226}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: MainCamera
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9866,6 +9866,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1833333432}
+  - component: {fileID: 1833333433}
   m_Layer: 5
   m_Name: HeroPos
   m_TagString: Untagged
@@ -9888,6 +9889,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 12979422}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1833333433
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833333431}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 110.3
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1834082708
 GameObject:
   m_ObjectHideFlags: 0
@@ -11952,7 +11974,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1456, y: 828, z: 0}
+  m_Size: {x: 1457, y: 828, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2079807339
 MonoBehaviour:
@@ -11985,7 +12007,7 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 1456
+  mWidth: 1457
   mHeight: 828
   mDepth: 0
   boundless: 0
@@ -11993,7 +12015,7 @@ MonoBehaviour:
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1.7584541
+  aspectRatio: 1.7596618
   mType: 1
   mFillDirection: 4
   mFillAmount: 1

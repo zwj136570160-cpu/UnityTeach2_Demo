@@ -14,6 +14,9 @@ public class GameDataMgr
     //角色数据
     public RoleData roleData;
 
+    //子弹数据
+    public BulletData bulletData;
+
     //当前选择的角色 编号
     public int nowSelHeroIndex = 0;
 
@@ -25,6 +28,8 @@ public class GameDataMgr
         rankData = XmlDataMgr.Instance.LoadData(typeof(RankData), "RankData") as RankData;
         //一开始就读取角色数据
         roleData = XmlDataMgr.Instance.LoadData(typeof(RoleData), "RoleData") as RoleData;
+        //一开始就读取子弹数据
+        bulletData = XmlDataMgr.Instance.LoadData(typeof(BulletData), "BulletData") as BulletData;
     }
 
     #region 音乐、音效相关
